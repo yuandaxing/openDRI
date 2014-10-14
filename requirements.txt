@@ -1,0 +1,17 @@
+argparse
+gunicorn
+Django==1.6.2
+django-celery==3.1.1
+djangorestframework
+django-scheduler
+django-uuidfield
+twilio==3.4.1
+Celery==3.1.9
+python-dateutil==2.2
+pyasn1
+pyasn1_modules
+dnspython
+sleekxmpp
+dj-database-url
+slacker
+south
