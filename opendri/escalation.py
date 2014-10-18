@@ -1,5 +1,4 @@
 __author__ = 'ydx'
-
 from django.contrib.auth.decorators import login_required 
 from .models import Service, ServiceTokens, SchedulePolicy, Token, User 
 from django.http import Http404

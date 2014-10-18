@@ -119,11 +119,8 @@ def unhandled(request):
 @login_required()
 def unhandled_for_on_call_user(request):
     services = Service.objects.all()
-
     services_to_list = services_where_user_is_on_call(request.user)
-
     incidents = Incident.objects.filter(service_key__in = services_to_list, event_type = Incident.TRIGGER).all().order_by("-occurred_at")
-
     return TemplateResponse(request, 'incidents/list.html', {'incidents': incidents, 'title': 'Current unhandled incidents', 'url': request.get_full_path(), 'services': services})
 
 @login_required()

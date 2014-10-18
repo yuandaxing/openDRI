@@ -8,7 +8,7 @@ def login(request) :
     user = auth.authenticate(username=username, password=password)
     if user and user.is_active :
         auth.login(request, user)
-        return TemplateResponse(request, 'auth/login.html')
+        return HttpResponseRedirect('/dashboard/')
     else :
         return TemplateResponse(request, 'auth/login.html')
 

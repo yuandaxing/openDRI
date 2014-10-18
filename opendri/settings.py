@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+import djcelery
+djcelery.setup_loader()
 
 
 # Quick-start development settings - unsuitable for production
@@ -40,6 +42,8 @@ INSTALLED_APPS = (
     'opendri',
     'opendri.templatetags',
     'notification',
+    'rest_framework',
+    'djcelery',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -90,5 +94,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOGIN_URL = '/login/'
-
+BASE_URL = ''
 AUTH_PROFILE_MODULE = 'opendri.UserProfile'

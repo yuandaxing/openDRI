@@ -1,13 +1,28 @@
+from django.conf import settings 
 from django.conf.urls import patterns, include, url
+from rest_framework import routers as rest_routers
+from opendri import views 
+from . import incidents 
+from django.contrib import admin 
 from schedule.periods import  Month, Week
 
-from django.contrib import admin
 admin.autodiscover()
+rest_router = rest_routers.SimpleRouter(trailing_slash=False)
+rest_router.register(r'users', views.UserViewSet)
+rest_router.register(r'groups', views.GroupViewSet)
+rest_router.register(r'schedule_policies', views.SchedulePolicyViewSet)
+rest_router.register(r'schedule_policy_rules', views.SchedulePolicyRuleViewSet)
+rest_router.register(r'create_event', incidents.IncidentViewSet)
+
+
 
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'opendri.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
+    url(r'^api/', include(rest_router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^api-token-auth/', 'rest_framework.authtoken.views.obtain_auth_token'),    
     url(r'^login/$', 'opendri.auth.login'),
     url(r'^logout/$', 'opendri.auth.logout'),
 

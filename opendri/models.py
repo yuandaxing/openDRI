@@ -120,7 +120,7 @@ class Incident(models.Model) :
         return (self.service_key, self.incidents_key)
 
     def clean(self) :
-        if self.event_type not in [TRIGGER, RESOLVE, ACKNOWLEDGE] :
+        if self.event_type not in ['trigger', 'resolve', 'acknowledge'] :
             raise ValidationError("'%s' is an invalid event type, valid values are 'trigger', 'resolve', 'acknowledge'" % self.event_type)
 @python_2_unicode_compatible
 class SchedulePolicyRule(models.Model) :

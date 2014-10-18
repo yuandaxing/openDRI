@@ -9,7 +9,6 @@
 	<link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
 	<script type="text/javascript" src="{% static "js/jquery-2.1.1.min.js" %}"></script>
 	<script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
-	<script type="text/javascript" src="{% static "js/jquery-plugin.min.js" %}"></script>
 	{% block static %}
 	{% endblock %}
   </head>
@@ -45,15 +44,6 @@
 			<li><a href="{% url 'opendri.schedules.list' %}">On-Call Schedules</a></li>
 			<li><a href="{% url 'opendri.users.list' %}">Users</a></li>
 		  </ul>
-		  <!-- <ul class="nav navbar-nav navbar-right"> -->
-		  <!-- 	<li class="dropdown"> -->
-		  <!-- 	  <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ user.username }} <span class="caret"></span></a> -->
-		  <!-- 	  <ul class="dropdown-menu" role="menu"> -->
-		  <!-- 		<li><a href="{% url 'opendri.auth.logout' %}">logout</a></li> -->
-		  <!-- 		<li><a href="{% url 'opendri.users.edit' user.id %}">account</a></li> -->
-		  <!-- 	  </ul> -->
-		  <!-- 	</li> -->
-		  <!-- </ul> -->
 		  <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
               <a href="#" data-toggle="dropdown">{{ user.username }}<b class="caret"></b></a>
