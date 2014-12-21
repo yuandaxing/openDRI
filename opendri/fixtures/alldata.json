@@ -1,0 +1,989 @@
+[
+{
+    "pk": 1, 
+    "model": "schedule.calendar", 
+    "fields": {
+        "name": "my-calendar-1", 
+        "slug": "yy"
+    }
+},
+{
+    "pk": "622436492edf7a495202d74c9cddb1bafdac8074", 
+    "model": "opendri.token", 
+    "fields": {
+        "created": "2014-10-17T23:39:52.975Z"
+    }
+},
+{
+    "pk": 1, 
+    "model": "opendri.schedulepolicy", 
+    "fields": {
+        "name": "aa", 
+        "repeat_times": 20
+    }
+},
+{
+    "pk": "03c3915a27f24d6aabc3b7c7569944ae", 
+    "model": "opendri.service", 
+    "fields": {
+        "policy": 1, 
+        "retry": 1, 
+        "name": "aa", 
+        "escalate_after": 1
+    }
+},
+{
+    "pk": 1, 
+    "model": "opendri.eventlog", 
+    "fields": {
+        "occurred_at": "2014-10-17T23:42:24.790Z", 
+        "service_key": "03c3915a27f24d6aabc3b7c7569944ae", 
+        "data": "aa api key created aa with status trigger"
+    }
+},
+{
+    "pk": 2, 
+    "model": "opendri.eventlog", 
+    "fields": {
+        "occurred_at": "2014-10-18T02:05:33.366Z", 
+        "service_key": "03c3915a27f24d6aabc3b7c7569944ae", 
+        "data": "aa api key created aa with status trigger"
+    }
+},
+{
+    "pk": 1, 
+    "model": "opendri.incident", 
+    "fields": {
+        "description": "aa", 
+        "occurred_at": "2014-10-18T02:05:33.369Z", 
+        "incident_key": "aa", 
+        "details": "aa", 
+        "service_key": "03c3915a27f24d6aabc3b7c7569944ae", 
+        "event_type": "trigger"
+    }
+},
+{
+    "pk": 1, 
+    "model": "opendri.servicetokens", 
+    "fields": {
+        "service_id": "03c3915a27f24d6aabc3b7c7569944ae", 
+        "name": "aa", 
+        "token_id": "622436492edf7a495202d74c9cddb1bafdac8074"
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_logentry", 
+        "name": "Can add log entry", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_logentry", 
+        "name": "Can change log entry", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 3, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_logentry", 
+        "name": "Can delete log entry", 
+        "content_type": 1
+    }
+},
+{
+    "pk": 4, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_permission", 
+        "name": "Can add permission", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 5, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_permission", 
+        "name": "Can change permission", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 6, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_permission", 
+        "name": "Can delete permission", 
+        "content_type": 2
+    }
+},
+{
+    "pk": 7, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_group", 
+        "name": "Can add group", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 8, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_group", 
+        "name": "Can change group", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 9, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_group", 
+        "name": "Can delete group", 
+        "content_type": 3
+    }
+},
+{
+    "pk": 10, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_user", 
+        "name": "Can add user", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 11, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_user", 
+        "name": "Can change user", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 12, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_user", 
+        "name": "Can delete user", 
+        "content_type": 4
+    }
+},
+{
+    "pk": 13, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_contenttype", 
+        "name": "Can add content type", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 14, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_contenttype", 
+        "name": "Can change content type", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 15, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_contenttype", 
+        "name": "Can delete content type", 
+        "content_type": 5
+    }
+},
+{
+    "pk": 16, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_session", 
+        "name": "Can add session", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 17, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_session", 
+        "name": "Can change session", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 18, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_session", 
+        "name": "Can delete session", 
+        "content_type": 6
+    }
+},
+{
+    "pk": 19, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_calendar", 
+        "name": "Can add calendar", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 20, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_calendar", 
+        "name": "Can change calendar", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 21, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_calendar", 
+        "name": "Can delete calendar", 
+        "content_type": 7
+    }
+},
+{
+    "pk": 22, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_calendarrelation", 
+        "name": "Can add calendar relation", 
+        "content_type": 8
+    }
+},
+{
+    "pk": 23, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_calendarrelation", 
+        "name": "Can change calendar relation", 
+        "content_type": 8
+    }
+},
+{
+    "pk": 24, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_calendarrelation", 
+        "name": "Can delete calendar relation", 
+        "content_type": 8
+    }
+},
+{
+    "pk": 25, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_rule", 
+        "name": "Can add rule", 
+        "content_type": 9
+    }
+},
+{
+    "pk": 26, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_rule", 
+        "name": "Can change rule", 
+        "content_type": 9
+    }
+},
+{
+    "pk": 27, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_rule", 
+        "name": "Can delete rule", 
+        "content_type": 9
+    }
+},
+{
+    "pk": 28, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_event", 
+        "name": "Can add event", 
+        "content_type": 10
+    }
+},
+{
+    "pk": 29, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_event", 
+        "name": "Can change event", 
+        "content_type": 10
+    }
+},
+{
+    "pk": 30, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_event", 
+        "name": "Can delete event", 
+        "content_type": 10
+    }
+},
+{
+    "pk": 31, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_eventrelation", 
+        "name": "Can add event relation", 
+        "content_type": 11
+    }
+},
+{
+    "pk": 32, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_eventrelation", 
+        "name": "Can change event relation", 
+        "content_type": 11
+    }
+},
+{
+    "pk": 33, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_eventrelation", 
+        "name": "Can delete event relation", 
+        "content_type": 11
+    }
+},
+{
+    "pk": 34, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_occurrence", 
+        "name": "Can add occurrence", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 35, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_occurrence", 
+        "name": "Can change occurrence", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 36, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_occurrence", 
+        "name": "Can delete occurrence", 
+        "content_type": 12
+    }
+},
+{
+    "pk": 37, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_token", 
+        "name": "Can add token", 
+        "content_type": 13
+    }
+},
+{
+    "pk": 38, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_token", 
+        "name": "Can change token", 
+        "content_type": 13
+    }
+},
+{
+    "pk": 39, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_token", 
+        "name": "Can delete token", 
+        "content_type": 13
+    }
+},
+{
+    "pk": 40, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_schedulepolicy", 
+        "name": "Can add schedule_policy", 
+        "content_type": 14
+    }
+},
+{
+    "pk": 41, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_schedulepolicy", 
+        "name": "Can change schedule_policy", 
+        "content_type": 14
+    }
+},
+{
+    "pk": 42, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_schedulepolicy", 
+        "name": "Can delete schedule_policy", 
+        "content_type": 14
+    }
+},
+{
+    "pk": 43, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_service", 
+        "name": "Can add service", 
+        "content_type": 15
+    }
+},
+{
+    "pk": 44, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_service", 
+        "name": "Can change service", 
+        "content_type": 15
+    }
+},
+{
+    "pk": 45, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_service", 
+        "name": "Can delete service", 
+        "content_type": 15
+    }
+},
+{
+    "pk": 46, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_eventlog", 
+        "name": "Can add eventlog", 
+        "content_type": 16
+    }
+},
+{
+    "pk": 47, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_eventlog", 
+        "name": "Can change eventlog", 
+        "content_type": 16
+    }
+},
+{
+    "pk": 48, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_eventlog", 
+        "name": "Can delete eventlog", 
+        "content_type": 16
+    }
+},
+{
+    "pk": 49, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_incident", 
+        "name": "Can add incidents", 
+        "content_type": 17
+    }
+},
+{
+    "pk": 50, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_incident", 
+        "name": "Can change incidents", 
+        "content_type": 17
+    }
+},
+{
+    "pk": 51, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_incident", 
+        "name": "Can delete incidents", 
+        "content_type": 17
+    }
+},
+{
+    "pk": 52, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_schedulepolicyrule", 
+        "name": "Can add schedule_policy_icy_rule", 
+        "content_type": 18
+    }
+},
+{
+    "pk": 53, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_schedulepolicyrule", 
+        "name": "Can change schedule_policy_icy_rule", 
+        "content_type": 18
+    }
+},
+{
+    "pk": 54, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_schedulepolicyrule", 
+        "name": "Can delete schedule_policy_icy_rule", 
+        "content_type": 18
+    }
+},
+{
+    "pk": 55, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_servicetokens", 
+        "name": "Can add service_token", 
+        "content_type": 19
+    }
+},
+{
+    "pk": 56, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_servicetokens", 
+        "name": "Can change service_token", 
+        "content_type": 19
+    }
+},
+{
+    "pk": 57, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_servicetokens", 
+        "name": "Can delete service_token", 
+        "content_type": 19
+    }
+},
+{
+    "pk": 58, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_userprofile", 
+        "name": "Can add user profile", 
+        "content_type": 20
+    }
+},
+{
+    "pk": 59, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_userprofile", 
+        "name": "Can change user profile", 
+        "content_type": 20
+    }
+},
+{
+    "pk": 60, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_userprofile", 
+        "name": "Can delete user profile", 
+        "content_type": 20
+    }
+},
+{
+    "pk": 61, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_usernotificationmethod", 
+        "name": "Can add user_notification_method", 
+        "content_type": 21
+    }
+},
+{
+    "pk": 62, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_usernotificationmethod", 
+        "name": "Can change user_notification_method", 
+        "content_type": 21
+    }
+},
+{
+    "pk": 63, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_usernotificationmethod", 
+        "name": "Can delete user_notification_method", 
+        "content_type": 21
+    }
+},
+{
+    "pk": 64, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_schedulednotification", 
+        "name": "Can add scheduled_notifications", 
+        "content_type": 22
+    }
+},
+{
+    "pk": 65, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_schedulednotification", 
+        "name": "Can change scheduled_notifications", 
+        "content_type": 22
+    }
+},
+{
+    "pk": 66, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_schedulednotification", 
+        "name": "Can delete scheduled_notifications", 
+        "content_type": 22
+    }
+},
+{
+    "pk": 67, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_taskmeta", 
+        "name": "Can add task state", 
+        "content_type": 23
+    }
+},
+{
+    "pk": 68, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_taskmeta", 
+        "name": "Can change task state", 
+        "content_type": 23
+    }
+},
+{
+    "pk": 69, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_taskmeta", 
+        "name": "Can delete task state", 
+        "content_type": 23
+    }
+},
+{
+    "pk": 70, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_tasksetmeta", 
+        "name": "Can add saved group result", 
+        "content_type": 24
+    }
+},
+{
+    "pk": 71, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_tasksetmeta", 
+        "name": "Can change saved group result", 
+        "content_type": 24
+    }
+},
+{
+    "pk": 72, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_tasksetmeta", 
+        "name": "Can delete saved group result", 
+        "content_type": 24
+    }
+},
+{
+    "pk": 73, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_intervalschedule", 
+        "name": "Can add interval", 
+        "content_type": 25
+    }
+},
+{
+    "pk": 74, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_intervalschedule", 
+        "name": "Can change interval", 
+        "content_type": 25
+    }
+},
+{
+    "pk": 75, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_intervalschedule", 
+        "name": "Can delete interval", 
+        "content_type": 25
+    }
+},
+{
+    "pk": 76, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_crontabschedule", 
+        "name": "Can add crontab", 
+        "content_type": 26
+    }
+},
+{
+    "pk": 77, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_crontabschedule", 
+        "name": "Can change crontab", 
+        "content_type": 26
+    }
+},
+{
+    "pk": 78, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_crontabschedule", 
+        "name": "Can delete crontab", 
+        "content_type": 26
+    }
+},
+{
+    "pk": 79, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_periodictasks", 
+        "name": "Can add periodic tasks", 
+        "content_type": 27
+    }
+},
+{
+    "pk": 80, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_periodictasks", 
+        "name": "Can change periodic tasks", 
+        "content_type": 27
+    }
+},
+{
+    "pk": 81, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_periodictasks", 
+        "name": "Can delete periodic tasks", 
+        "content_type": 27
+    }
+},
+{
+    "pk": 82, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_periodictask", 
+        "name": "Can add periodic task", 
+        "content_type": 28
+    }
+},
+{
+    "pk": 83, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_periodictask", 
+        "name": "Can change periodic task", 
+        "content_type": 28
+    }
+},
+{
+    "pk": 84, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_periodictask", 
+        "name": "Can delete periodic task", 
+        "content_type": 28
+    }
+},
+{
+    "pk": 85, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_workerstate", 
+        "name": "Can add worker", 
+        "content_type": 29
+    }
+},
+{
+    "pk": 86, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_workerstate", 
+        "name": "Can change worker", 
+        "content_type": 29
+    }
+},
+{
+    "pk": 87, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_workerstate", 
+        "name": "Can delete worker", 
+        "content_type": 29
+    }
+},
+{
+    "pk": 88, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "add_taskstate", 
+        "name": "Can add task", 
+        "content_type": 30
+    }
+},
+{
+    "pk": 89, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "change_taskstate", 
+        "name": "Can change task", 
+        "content_type": 30
+    }
+},
+{
+    "pk": 90, 
+    "model": "auth.permission", 
+    "fields": {
+        "codename": "delete_taskstate", 
+        "name": "Can delete task", 
+        "content_type": 30
+    }
+},
+{
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "ydx", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2014-12-21T11:07:27.359Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$3jNOqOBCUVRr$r/YotArDW9AQa+8MWMZQ3i/z/PQEpdZZizBDpY3TOhw=", 
+        "email": "mryuan0@gmail.com", 
+        "date_joined": "2014-10-17T23:37:53.345Z"
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "aa", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2014-10-17T23:38:41.238Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$xnp2YGlHyWjJ$MdwHwyCvHQLLtpFbGlbc6P/PFa3yZVk5vq8sUkPx01M=", 
+        "email": "aa@gmail.com", 
+        "date_joined": "2014-10-17T23:38:41.238Z"
+    }
+},
+{
+    "pk": 1, 
+    "model": "schedule.event", 
+    "fields": {
+        "end": "2014-10-31T00:00:00Z", 
+        "description": "aa", 
+        "creator": 1, 
+        "title": "ydx,ydx", 
+        "rule": null, 
+        "start": "2014-10-01T00:00:00Z", 
+        "created_on": "2014-10-17T23:39:16.746Z", 
+        "end_recurring_period": null, 
+        "updated_on": "2014-10-17T23:39:16.746Z", 
+        "calendar": 1
+    }
+},
+{
+    "pk": 1, 
+    "model": "opendri.schedulepolicyrule", 
+    "fields": {
+        "position": 1, 
+        "schedule": null, 
+        "user_id": 2, 
+        "escalate_after": 0, 
+        "schedule_policy": 1
+    }
+},
+{
+    "pk": 1, 
+    "model": "opendri.userprofile", 
+    "fields": {
+        "phone_number": "", 
+        "slack_room_name": "", 
+        "user": 1, 
+        "pushover_app_key": "", 
+        "pushover_user_key": ""
+    }
+},
+{
+    "pk": 2, 
+    "model": "opendri.userprofile", 
+    "fields": {
+        "phone_number": "123", 
+        "slack_room_name": "aa", 
+        "user": 2, 
+        "pushover_app_key": "aa", 
+        "pushover_user_key": "`123"
+    }
+},
+{
+    "pk": 1, 
+    "model": "notification.usernotificationmethod", 
+    "fields": {
+        "position": 1, 
+        "user": 2, 
+        "method": "pushover"
+    }
+},
+{
+    "pk": 1, 
+    "model": "notification.schedulednotification", 
+    "fields": {
+        "incident": 1, 
+        "message": "A Service is experiencing a problem: aa aa. Handle at: /incidents/details/1", 
+        "send_at": "2014-10-18T02:05:33.372Z", 
+        "notifier": "pushover", 
+        "user_to_notify": 2
+    }
+}
+]
