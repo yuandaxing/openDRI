@@ -23,11 +23,8 @@ SECRET_KEY = '_#z83%cx%hlqpf&3h*t+7(jy*l@=icwxqvr5yd8%b%=5@_0t3-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 TEMPLATE_DEBUG = True
-
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -79,19 +76,13 @@ DATABASES = {
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-
 STATIC_URL = '/static/'
 LOGIN_URL = '/login/'
 BASE_URL = ''
